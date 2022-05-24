@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reviews.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="center-body">
+            <div class="loader-circle-87"></div>
+        </div>
+    </div>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <form class="search" action="" method="get">
+                <img src="img/Fill.png" alt="fill">
+                <input name="s" placeholder="Название модели или артикул" type="search">
+            </form>
+            <div class="phone">
+                <img src="img/Calling.png" alt="phone">
+                <a href="tel:+74951234567"><p>+7 495 221-06-75</p></a>
+            </div>
+            <button href="#popup" class="call-btn popup-link">Заказать звонок</button>
+        </div>
+        <div class="section-navigation">
+            <div class="wrapper">
+                <nav class="menu">
+                    <a href="catalog.html"><button class="catalog-btn" href="catalog.html"><img src="img/line_catalog.png"  alt="line_catalog">Каталог</button></a>
+                    <ul>
+                        <li><a href="about_product.html">О продукте</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="404.html">Доставка и оплата</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="inner">
+                    <div class="city-select">
+                        <img src="img/select_send.png" alt="select_send">
+                        <select name="city" class="user_city">
+                            <option value="1">Москва</option>
+                            <option value="2">Минск</option>
+                            <option value="3">Киев</option>
+                        </select>
+                    </div>
+                    <div class="cart">
+                        <img src="img/shopping-cart.png" alt="cart">
+                        <p>Моя корзина</p>
+                        <div class="amount_cart">
+                            <p class="amount">+1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-mobile">
+        <div class="wrapper">
+            <div class="hidden-menu">
+                <input type="checkbox">
+                <div class="hidden-burger">
+                    <span class="line ln1"></span>
+                    <span class="line ln2"></span>
+                    <span class="line ln3"></span>
+                </div>
+                <div class="header__toggle-menu" >
+                    <nav class="nav-toggle">
+                        <ul>
+                            <li class="active"><a href="index.html">Главная</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="about_product.html">О продукте</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="404.html">Доставка и оплата</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <button href="#popup" class="btn call-btn popup-link">Заказать звонок</button>
+                    </nav>
+                </div>               
+            </div>
+            <div class="logo">
+                <a class="logo-desktop"href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <a class="logo-mobile" href="index.html"><img src="img/logo-mobile.png" alt="logo-mobile"></a>
+            </div>
+            <div class="cart">
+                <img src="img/shopping-cart.png" alt="phone">
+                <img class="cart-mobile" src="img/cart-mobile.png" alt="cart-mobile">
+                <p>Моя корзина</p>
+                <div class="amount_cart">
+                    <p class="amount">+1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navi-line">
+        <div class="wrapper">
+            <a href="index.html">Главная</a>
+            <img src="img/catalog_arrow.png" alt="#">
+            <a class="current-page" href="#">Отзывы</a>
+        </div>
+    </div>
+    <div class="section-customer-reviews">
+        <div class="wrapper">
+            <h2>Отзывы покупателей</h2>
+            <div class="reviews-items">
+                <div class="reviews-item">
+                    <div class="profile">
+                        <div class="inner">
+                            <img class="avatar-author" src="img/avatar.png" alt="#">
+                            <div class="name-product">
+                                <p class="name-author">Наталья, Москва</p>
+                                <p class="product-name-rew">Кресло Samurai S-2.04 плюс</p>
+                            </div>
+                        </div>
+                        <img class="rating" src="img/review_4stars.png" alt="#">
+                    </div>
+                    <p class="review">С другой стороны выбранный нами инновационный путь создаёт предпосылки качественно новых шагов для всесторонне сбалансированных нововведений. С другой стороны повышение уровня.</p>
+                    <div class="photos-review">
+                        <div class="photo-item">
+                            <img src="img/review_photo.png" alt="#">
+                        </div>
+                        <div class="photo-item">
+                            <img src="img/review_photo.png" alt="#">
+                        </div>
+                        <div class="photo-item">
+                            <img src="img/review_photo.png" alt="#">
+                        </div>
+                        <div class="more">
+                            <p class="count">+2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-item">
+                    <div class="profile">
+                        <div class="inner">
+                            <img class="avatar-author" src="img/avatar.png" alt="#">
+                            <div class="name-product">
+                                <p class="name-author">Наталья, Москва</p>
+                                <p class="product-name-rew">Кресло Samurai S-2.04 плюс</p>
+                            </div>
+                        </div>
+                        <img class="rating" src="img/review_5stars.png" alt="#">
+                    </div>
+                    <p class="review">Задача организации, в особенности же синтетическое тестирование не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Есть над чем задуматься: стремящиеся вытеснить традиционное производство, нанотехнологии могут быть ассоциативно распределены по отраслям. Есть над чем задуматься: некоторые особенности внутренней политики являются только методом.</p>
+                </div>
+                <div class="reviews-item">
+                    <div class="profile">
+                        <div class="inner">
+                            <img class="avatar-author" src="img/avatar.png" alt="#">
+                            <div class="name-product">
+                                <p class="name-author">Наталья, Москва</p>
+                                <p class="product-name-rew">Кресло Samurai S-2.04 плюс</p>
+                            </div>
+                        </div>
+                        <img class="rating" src="img/review_5stars.png" alt="#">
+                    </div>
+                    <p class="review">Задача организации, в особенности же синтетическое тестирование не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Есть над чем задуматься: стремящиеся вытеснить традиционное производство, нанотехнологии могут быть ассоциативно распределены по отраслям. Есть над чем задуматься: некоторые особенности внутренней политики являются только методом.</p>
+                    <div class="photos-review">
+                        <div class="photo-item">
+                            <img src="img/review_photo.png" alt="#">
+                        </div>
+                        <div class="photo-item">
+                            <img src="img/review_photo.png" alt="#">
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-item">
+                    <div class="profile">
+                        <div class="inner">
+                            <img class="avatar-author" src="img/avatar.png" alt="#">
+                            <div class="name-product">
+                                <p class="name-author">Наталья, Москва</p>
+                                <p class="product-name-rew">Кресло Samurai S-2.04 плюс</p>
+                            </div>
+                        </div>
+                        <img class="rating" src="img/review_5stars.png" alt="#">
+                    </div>
+                    <p class="review">Задача организации, в особенности же синтетическое тестирование не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Есть над чем задуматься: стремящиеся вытеснить традиционное производство, нанотехнологии могут быть.</p>
+                </div>
+                <div class="reviews-item">
+                    <div class="profile">
+                        <div class="inner">
+                            <img class="avatar-author" src="img/avatar.png" alt="#">
+                            <div class="name-product">
+                                <p class="name-author">Наталья, Москва</p>
+                                <p class="product-name-rew">Кресло Samurai S-2.04 плюс</p>
+                            </div>
+                        </div>
+                        <img class="rating" src="img/review_4stars.png" alt="#">
+                    </div>
+                    <p class="review">С другой стороны выбранный нами инновационный путь создаёт предпосылки качественно новых шагов для всесторонне сбалансированных нововведений. С другой стороны повышение уровня.</p>
+                    <div class="photos-review">
+                        <div class="photo-item">
+                            <img src="img/review_photo.png" alt="#">
+                        </div>
+                        <div class="photo-item">
+                            <img src="img/review_photo.png" alt="#">
+                        </div>
+                        <div class="photo-item">
+                            <img src="img/review_photo.png" alt="#">
+                        </div>
+                        <div class="more">
+                            <p class="count">+2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-item">
+                    <div class="profile">
+                        <div class="inner">
+                            <img class="avatar-author" src="img/avatar.png" alt="#">
+                            <div class="name-product">
+                                <p class="name-author">Наталья, Москва</p>
+                                <p class="product-name-rew">Кресло Samurai S-2.04 плюс</p>
+                            </div>
+                        </div>
+                        <img class="rating" src="img/review_5stars.png" alt="#">
+                    </div>
+                    <p class="review">Задача организации, в особенности же синтетическое тестирование не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Есть над чем задуматься: стремящиеся вытеснить традиционное производство, нанотехнологии могут быть ассоциативно распределены по отраслям. Есть над чем задуматься: некоторые особенности внутренней политики являются только методом.</p>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------>
+            <button class="btn_show_all collapsible">Показать всё</button>
+
+            <!------------------------------------------------------------------------>
+        </div>
+    </div>
+    <div class="section-feedback">
+        <div class="wrapper">
+            <h2>У вас остались вопросы?</h2>
+            <p>Оставьте контакты. Наш менеджер свяжется с вами и бесплатно проконсультирует</p>
+            <form class="form">
+                <input class="input_fed ico1" type="text" placeholder="Ваше имя">
+                <input class="input_fed ico2" type="tel" placeholder="Телефон для связи">
+                <input class="btn btn-feed popup-link" href="popup_2" type="submit" value="Заказать звонок">
+            </form>
+            <div class="inner"><img class="hand_img" src="img/forma_phone.png" alt="#">
+                <div class="call_phone">
+                    <img class="calling_img" src="img/calling_form.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-map">
+        <img src="img/map_bg.png" alt="#">
+        <img class="map-mob-bg" src="img/map-mobile.png" alt="#">
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="block_logo">
+                <a class="footer_logo" href="index.html"><img src="img/logo_foot.png" alt="logo"></a>
+                <div class="text-block">
+                    <a href="#">Политика конфиденциальности</a>
+                    <p>	&copy; 2022 Все права защищены</p>
+                </div>
+            </div>
+            <nav class="footer_menu">
+                <ul>
+                    <li><a href="about_product.html">О продукте</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="404.html">Доставка и оплата</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer_info">
+                <a href="tel:+74951234567"><p class="footer_phone">+7 495 221-06-75</p></a>
+                <a href="mailto: zakaz@kresla-samurai.ru"><p class="footer_email">zakaz@kresla-samurai.ru</p></a>
+                <a href="contacts.html#address"><p class="footer_address">ул. Красного курсанта д.25, лит.в, оф. 114, бизнес-центр "RED CADET"</p></a>
+            </div>
+            <div class="politics-mobile">
+                <a href="#">Политика конфиденциальности</a>
+                <p>	&copy; 2022 Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <div href="#" class="popup-close close-popup">X</div>
+                <div class="section-feedback-popup">
+                    <div class="wrapper">
+                        <div class="text-block-feedback">
+                            <h2>У вас остались вопросы?</h2>
+                            <p>Оставьте контакты. Наш менеджер свяжется с вами и бесплатно проконсультирует</p>
+                        </div>
+                        <form class="form">
+                            <input class="input_fed ico1" type="text" placeholder="Ваше имя">
+                            <input class="input_fed ico2" type="tel" placeholder="Телефон для связи">
+                            <input class="btn popup-link" type="submit" href="#popup_2" value="Заказать звонок">
+                        </form>
+                        <div class="inner">
+                            <img class="hand_img" src="img/forma_phone.png" alt="#">
+                            <div class="call_phone">
+                                <img class="calling_img" src="img/calling_form.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_2" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <div href="#" class="popup-close close-popup">X</div>
+                <div class="section-feedback-popup">
+                    <div class="wrapper ok-popup-pad">
+                        <div class="text-block-feedback block-ok">
+                            <h2>Вы заказали звонок!</h2>
+                            <p>В ближайшее время наш менеджер свяжется с Вами!</p>
+                        </div>
+                        <div class="ok">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_3" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <div href="#" class="popup-close close-popup">X</div>
+                <div class="section-feedback-popup">
+                    <div class="wrapper">
+                        <div class="text-block-feedback popup-3">
+                            <h2>Запись на тест-драйв</h2>
+                            <p>Оставьте контакты. Наш менеджер свяжется с вами и уточнит подходящую дату</p>
+                        </div>
+                        <form class="form">
+                            <input class="input_fed ico1" type="text" placeholder="Ваше имя">
+                            <input class="input_fed ico2" type="tel" placeholder="Телефон для связи">
+                            <input class="btn popup-link" type="submit" href="#popup_2" value="Заказать звонок">
+                        </form>
+                        <div class="inner popup-3"><img class="hand_img" src="img/forma_phone.png" alt="#">
+                            <div class="call_phone">
+                                <img class="calling_img" src="img/calling_form.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/onLoad.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/collapsible.js"></script>
+</body>
+</html>

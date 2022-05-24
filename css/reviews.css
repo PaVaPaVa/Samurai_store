@@ -1,0 +1,206 @@
+.section-customer-reviews .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.section-customer-reviews .btn_show_all {
+    width: 100%;
+    margin-bottom: 90px;
+}
+.section-customer-reviews .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.section-customer-reviews h2 {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #2B3350;
+}
+.profile .inner {
+    display: flex;
+    align-items: center;
+}
+.inner .avatar-author {
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.inner .name-product .name-author {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    color: #2B3350;
+}
+.inner .name-product .name-author {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    color: #2B3350;
+}
+
+.inner .name-product .product-name-rew{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    color: #2B3350;
+}
+.reviews-items {
+    column-count: 2;
+    margin-bottom: 40px;
+}
+.reviews-item:hover {
+    transform: scale(1.03);
+    transition: 0.4s linear;
+}
+
+.reviews-item {
+    display: inline-block;
+    max-width: 570px;
+    height: auto;
+    padding: 40px;
+    border: 1px solid #F3F4F7;
+    box-shadow: 0px 20px 52px -8px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.reviews-item:nth-child(n + 5) {
+    display: none;
+}
+.reviews-items.active .reviews-item:nth-child(n + 5) {
+    display: inline-block;
+}
+.reviews-item .review {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3350;
+    margin-bottom: 25px;
+}
+.photos-review {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.photos-review .photo-item {
+    width: 115px;
+    height: 115px;
+    border-radius: 8px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.photos-review .more {
+    background: #F3F4F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 8px;
+}
+.photos-review .more .count {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    color: #2B3350;
+}
+
+/*-------------------------MEDIA------------------------------------*/
+@media (max-width: 900px) {
+    .reviews-items {
+        column-count: 1;
+    }
+    .reviews-item {
+        max-width: none;
+    }
+    .section-customer-reviews h2 {
+        text-align: center;
+    }
+}
+@media (max-width: 680px) {
+    .section-customer-reviews h2 {
+        font-size: 28px;
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 610px) {
+    div.photo-item:nth-of-type(3) {
+        display: none;
+    }
+    .reviews-item {
+        padding: 30px;
+    }
+}
+@media (max-width: 475px) {
+    .section-customer-reviews h2 {
+        font-size: 26px;
+    }
+    .reviews-item .review {
+        font-size: 15px;
+    }
+    .inner .name-product .product-name-rew {
+        font-size:13px;
+    }
+    .inner .name-product .name-author {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .reviews-item:hover {
+        transform: scale(1);
+        background-color: #2b33500e;
+    }
+    .reviews-items {
+        margin-bottom: 15px;
+    }
+    .reviews-item {
+        padding: 30px 20px;
+    }
+    .photos-review .photo-item {
+        width: 88px;
+        height: 88px;
+    }
+    .photos-review .photo-item img {
+        width: 88px;
+        height: auto;
+    }
+    .photos-review .more {
+        width: 88px;
+        height: 88px;
+    }
+    .section-customer-reviews .btn_show_all {
+        margin-bottom: 15px;
+    }
+    .reviews-item:nth-child(n + 3) {
+        display: none;
+    }
+    .reviews-items.active .reviews-item:nth-child(n + 3) {
+        display: inline-block;
+    }
+    .photos-review .more .count {
+        font-size: 17px;
+    }
+}
+@media (max-width: 375px) {
+    .reviews-item {
+        padding-bottom: 45px;
+        position: relative;
+    }
+    .rating {
+        position: absolute;
+        top: 92%;
+    }
+    .section-customer-reviews .wrapper {
+        padding: 0 2%;
+    }
+    .reviews-item {
+        padding: 35px 10px;
+    }
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="center-body">
+            <div class="loader-circle-87"></div>
+        </div>
+    </div>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <form class="search" action="" method="get">
+                <img src="img/Fill.png" alt="fill">
+                <input name="s" placeholder="Название модели или артикул" type="search">
+            </form>
+            <div class="phone">
+                <img src="img/Calling.png" alt="phone">
+                <a href="tel:+74951234567"><p>+7 495 221-06-75</p></a>
+            </div>
+            <button href="#popup" class="call-btn popup-link">Заказать звонок</button>
+        </div>
+        <div class="section-navigation">
+            <div class="wrapper">
+                <nav class="menu">
+                    <a href="catalog.html"><button class="catalog-btn" href="catalog.html"><img src="img/line_catalog.png"  alt="line_catalog">Каталог</button></a>
+                    <ul>
+                        <li><a href="about_product.html">О продукте</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="404.html">Доставка и оплата</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="inner">
+                    <div class="city-select">
+                        <img src="img/select_send.png" alt="select_send">
+                        <select name="city" class="user_city">
+                            <option value="1">Москва</option>
+                            <option value="2">Минск</option>
+                            <option value="3">Киев</option>
+                        </select>
+                    </div>
+                    <div class="cart">
+                        <img src="img/shopping-cart.png" alt="cart">
+                        <p>Моя корзина</p>
+                        <div class="amount_cart">
+                            <p class="amount">+1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-mobile">
+        <div class="wrapper">
+            <div class="hidden-menu">
+                <input type="checkbox">
+                <div class="hidden-burger">
+                    <span class="line ln1"></span>
+                    <span class="line ln2"></span>
+                    <span class="line ln3"></span>
+                </div>
+                <div class="header__toggle-menu" >
+                    <nav class="nav-toggle">
+                        <ul>
+                            <li class="active"><a href="index.html">Главная</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="about_product.html">О продукте</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="404.html">Доставка и оплата</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <button href="#popup" class="btn call-btn popup-link">Заказать звонок</button>
+                    </nav>
+                </div>               
+            </div>
+            <div class="logo">
+                <a class="logo-desktop"href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <a class="logo-mobile" href="index.html"><img src="img/logo-mobile.png" alt="logo-mobile"></a>
+            </div>
+            <div class="cart">
+                <img src="img/shopping-cart.png" alt="phone">
+                <img class="cart-mobile" src="img/cart-mobile.png" alt="cart-mobile">
+                <p>Моя корзина</p>
+                <div class="amount_cart">
+                    <p class="amount">+1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navi-line">
+        <div class="wrapper">
+            <a href="index.html">Главная</a>
+            <img src="img/catalog_arrow.png" alt="#">
+            <a class="current-page" href="#">Каталог</a>
+        </div>
+    </div>
+    <div class="section-catalog">
+        <div class="wrapper">
+            <div class="inner">
+                <h2>Каталог кресел</h2>
+                <select name="catalog-select" class="catalog-select">
+                    <option value="1">По возрастанию цены</option>
+                    <option value="2">По убыванию цены</option>
+                    <option value="3">По популярности</option>
+                </select>
+            </div>
+            <div class="filter_catalog">
+                <div class="inner">
+                    <img src="img/backrest.png" alt="backrest">
+                    <select class="select_filter" name="backrest" id="">
+                        <option value="1">Сетка</option>
+                        <option value="2">Кожа</option>
+                        <option value="3">Иное</option>
+                    </select>
+                    <div class="text_border filt1">Спинка</div>
+                </div>
+                <div class="inner">
+                    <img src="img/seat.png" alt="seat">
+                    <select class="select_filter" name="backrest" id="">
+                        <option value="1">Кожзам</option>
+                        <option value="2">Кожа</option>
+                        <option value="3">Сетка</option>
+                    </select>
+                    <div class="text_border filt2">Сиденье</div>
+                </div>
+                <div class="inner">
+                    <img src="img/kub.png" alt="kub">
+                    <select class="select_filter" name="backrest" id="">
+                        <option value="1">3D</option>
+                        <option value="2">Нет</option>
+                    </select>
+                    <div class="text_border filt3">Подголовник</div>
+                </div>
+                <div class="inner">
+                    <select class="select_filter" name="backrest" id="" disabled>
+                        <option value="1">Все</option>
+                    </select>
+                    <div class="text_border filt4">Подлокотники</div>
+                </div>
+            </div>
+            <div class="products_cards">
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card1">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card2">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card3">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card4">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card5">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card6">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card7">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card8">Добавить в корзину</button>
+                </div>
+            </div>
+            <div class="products_cards content-collab">
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card8">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card8">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card8">Добавить в корзину</button>
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="img/chair_catalog.png" alt="#">
+                    <p class="product_name">Samurai KL-1.04 Темно-коричневый</p>
+                    <p class="price">23 000 ₽</p>
+                    <div class="old_price_block">
+                        <p class="old_price">27 000 ₽</p>
+                        <span class="line_strike_out"></span>
+                    </div>
+                    <button class="btn btn_card" id="card8">Добавить в корзину</button>
+                </div>
+            </div>
+            <button class="btn_show_all collapsible">Показать всё</button>
+        </div>
+    </div>
+    <div class="section-feedback">
+        <div class="wrapper">
+            <h2>У вас остались вопросы?</h2>
+            <p>Оставьте контакты. Наш менеджер свяжется с вами и бесплатно проконсультирует</p>
+            <form class="form">
+                <input class="input_fed ico1" type="text" placeholder="Ваше имя">
+                <input class="input_fed ico2" type="tel" placeholder="Телефон для связи">
+                <input class="btn btn-feed popup-link" href="popup_2" type="submit" value="Заказать звонок">
+            </form>
+            <div class="inner"><img class="hand_img" src="img/forma_phone.png" alt="#">
+                <div class="call_phone">
+                    <img class="calling_img" src="img/calling_form.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-map">
+        <img src="img/map_bg.png" alt="#">
+        <img class="map-mob-bg" src="img/map-mobile.png" alt="#">
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="block_logo">
+                <a class="footer_logo" href="index.html"><img src="img/logo_foot.png" alt="logo"></a>
+                <div class="text-block">
+                    <a href="#">Политика конфиденциальности</a>
+                    <p>	&copy; 2022 Все права защищены</p>
+                </div>
+            </div>
+            <nav class="footer_menu">
+                <ul>
+                    <li><a href="about_product.html">О продукте</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="404.html">Доставка и оплата</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer_info">
+                <a href="tel:+74951234567"><p class="footer_phone">+7 495 221-06-75</p></a>
+                <a href="mailto: zakaz@kresla-samurai.ru"><p class="footer_email">zakaz@kresla-samurai.ru</p></a>
+                <a href="contacts.html#address"><p class="footer_address">ул. Красного курсанта д.25, лит.в, оф. 114, бизнес-центр "RED CADET"</p></a>
+            </div>
+            <div class="politics-mobile">
+                <a href="#">Политика конфиденциальности</a>
+                <p>	&copy; 2022 Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <div href="#" class="popup-close close-popup">X</div>
+                <div class="section-feedback-popup">
+                    <div class="wrapper">
+                        <div class="text-block-feedback">
+                            <h2>У вас остались вопросы?</h2>
+                            <p>Оставьте контакты. Наш менеджер свяжется с вами и бесплатно проконсультирует</p>
+                        </div>
+                        <form class="form">
+                            <input class="input_fed ico1" type="text" placeholder="Ваше имя">
+                            <input class="input_fed ico2" type="tel" placeholder="Телефон для связи">
+                            <input class="btn popup-link" type="submit" href="#popup_2" value="Заказать звонок">
+                        </form>
+                        <div class="inner">
+                            <img class="hand_img" src="img/forma_phone.png" alt="#">
+                            <div class="call_phone">
+                                <img class="calling_img" src="img/calling_form.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_2" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <div href="#" class="popup-close close-popup">X</div>
+                <div class="section-feedback-popup">
+                    <div class="wrapper ok-popup-pad">
+                        <div class="text-block-feedback block-ok">
+                            <h2>Вы заказали звонок!</h2>
+                            <p>В ближайшее время наш менеджер свяжется с Вами!</p>
+                        </div>
+                        <div class="ok">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_3" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <div href="#" class="popup-close close-popup">X</div>
+                <div class="section-feedback-popup">
+                    <div class="wrapper">
+                        <div class="text-block-feedback popup-3">
+                            <h2>Запись на тест-драйв</h2>
+                            <p>Оставьте контакты. Наш менеджер свяжется с вами и уточнит подходящую дату</p>
+                        </div>
+                        <form class="form">
+                            <input class="input_fed ico1" type="text" placeholder="Ваше имя">
+                            <input class="input_fed ico2" type="tel" placeholder="Телефон для связи">
+                            <input class="btn popup-link" type="submit" href="#popup_2" value="Заказать звонок">
+                        </form>
+                        <div class="inner popup-3"><img class="hand_img" src="img/forma_phone.png" alt="#">
+                            <div class="call_phone">
+                                <img class="calling_img" src="img/calling_form.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/onLoad.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/collapsible.js"></script>
+</body>
+</html>
