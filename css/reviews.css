@@ -184,6 +184,7 @@
     .reviews-items.active .reviews-item:nth-child(n + 3) {
         display: inline-block;
     }
+    
     .photos-review .more .count {
         font-size: 17px;
     }

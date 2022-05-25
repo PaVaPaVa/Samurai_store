@@ -1,4 +1,18 @@
-///// slider-promo-start ////
+///// slider-promo-start ///
+/*
+function onClick() {
+    let cardBtns = document.getElementsByClassName('btn_card');
+    console.log(cardBtns);
+    for(let i = 0; i < cardBtns.length; i++) {
+        cardBtn = cardBtns[i];
+    
+        this.cardBtn.addEventListener('click', ()=> {
+            this.cardBtn.innerHTML = 'В корзине';
+        console.log(this.cardBtn);
+        })
+    }
+}*/
+
 function onLoad() {
     window.onload = function() {
         let preloader = document.getElementById('preloader');
@@ -70,27 +84,16 @@ function sliderPromoOn() {
 
     setInterval(nextSlide, 15000);
 }
-// slider-promo-end //
-///Замена текста в кнопке слайдера ////
-    /*let btnPromo = document.querySelector('.btn-promo');
-    console.log(btnPromo);
-    const mq = window.matchMedia('(max-width: 475px)');
 
-    if (mq.matches) {
-        btnPromo.innerHTML="Тест-драйв";
-    } else {
-        btnPromo.innerHTML="Запись на тест-драйв";
-    }*/
-let btnsPromo = document.querySelectorAll('.btn-promo');
+///Замена текста в кнопке слайдера ////
 function textReplace() {
+    let btnsPromo = document.querySelectorAll('.btn-promo');
     const mq = window.matchMedia("(min-width: 800px)")
-    console.log(btnsPromo);
-    mq.addEventListener('resize', WidthChange)
-    WidthChange(mq)
-    // изменение медиа-запроса
-    function WidthChange(mq) {
+    window.addEventListener('resize', () => WidthChange(mq))
+    //WidthChange()
+    function WidthChange() {
         if (mq.matches) {
-        // ширина окна не менее 75px
+        // ширина окна не менее 800px
             for (let i = 0; i < btnsPromo.length; i++) {
             btnsPromo[i].innerHTML="Запись на тест-драйв";
             }
@@ -102,17 +105,16 @@ function textReplace() {
         }
     }
 }
+
 ///Замена текста в кнопке слайдера ////
 // slider-rew-start//
 function sliderRewiewsOn() { 
     let position = 0;
     let slidesToShow = 2;
-    const mq = window.matchMedia("(min-width: 768px)")
-
-    mq.addEventListener('resize', WidthChange)
+    const mq = window.matchMedia("(min-width: 768px)")  
+    //mq.addEventListener('resize', WidthChange)   
+    window.addEventListener('resize', () => WidthChange(mq))
     WidthChange(mq)
-    
-    // изменение медиа-запроса
     function WidthChange(mq) {
       if (mq.matches) {
         // ширина окна не менее 768px
@@ -164,10 +166,16 @@ function sliderRewiewsOn() {
     const checkBtns = () => {
         btnPrev.disabled = position === 0;
         btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+        if(btnPrev.disabled){ 
+            btnPrev.style.backgroundColor = "#a4919142"
+        }  else btnPrev.style.backgroundColor = "white";
+        if(btnNext.disabled){ 
+            btnNext.style.backgroundColor = "#a4919142"
+        }  else btnNext.style.backgroundColor = "white";
     }
-    checkBtns();
 }
 // slider-rew-end //
+
 function circleBlockActive() {
     let listElemDetails= document.querySelectorAll('.item');
     listElemDetails.forEach(elem=> {

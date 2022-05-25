@@ -20,9 +20,9 @@
 }
 
 .section-catalog .wrapper .inner {
-display: flex;
-justify-content: space-between;
-align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .section-catalog .wrapper .inner h2 {
@@ -46,6 +46,7 @@ align-items: baseline;
 .section-catalog .wrapper .inner .catalog-select option {
     text-align: center;
 }
+
 .section-map {
     display: flex;
     justify-content: center;
