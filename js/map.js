@@ -26,13 +26,13 @@ function initMap() {
     });
 
 
-    map.controls.remove('geolocationControl'); // удаляем геолокацию
-    map.controls.remove('searchControl'); // удаляем поиск
-    map.controls.remove('trafficControl'); // удаляем контроль трафика
-    map.controls.remove('typeSelector'); // удаляем тип
-    //map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-    map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-    //map.controls.remove('rulerControl'); // удаляем контрол правил
+    map.controls.remove('geolocationControl'); 
+    map.controls.remove('searchControl'); 
+    map.controls.remove('trafficControl'); 
+    map.controls.remove('typeSelector'); 
+    //map.controls.remove('fullscreenControl'); 
+    map.controls.remove('zoomControl'); 
+    //map.controls.remove('rulerControl'); 
     map.behaviors.disable(['scrollZoom']);
     map.geoObjects.add(placemark);
     map2.geoObjects.add(placemark2);
